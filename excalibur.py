@@ -4,7 +4,7 @@ TOKEN = "Insert Token Here"
 PREFIX = "Insert Prefix Here"
 SPAM = ("Test", "TEST") # Put as many sentences or words as you want
 WEBHOOK = ("Test", "TEST") # Put as many webhook names as you want
-CHANNEL = ("Test", "TEST") # Put as many channels as possible
+CHANNEL = ("Test", "TEST") # Put as many channels as you want 
 
 # WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING #
 
@@ -24,6 +24,7 @@ client = discord.Client()
 @espada.event
 async def on_ready():
 	print(f"Your bot's oauth2 link is https://discord.com/oauth2/authorize?client_id={espada.user.id}&permissions=8&scope=bot")
+	print("Made by: Espada#7777 https://github.com/Xeyzen7959/ExcaliburNuke")
 	print(f"{PREFIX}demolish to cause mayhem")
 	await espada.change_presence(
 		status=discord.Status.online, activity=discord.Game("Made by: Espada#7777")
