@@ -31,7 +31,7 @@ async def on_ready():
     )
 
 @espada.command()
-async def seize(ctx):
+async def demolish(ctx):
   await ctx.message.delete()
   guild = ctx.guild
   await nuke(guild)
